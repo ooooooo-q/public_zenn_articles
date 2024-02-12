@@ -1,0 +1,23 @@
+title: "Deserialization on Rails"
+summary: "Ruby on Railsで使われているDeserializeとその危険性について調べたものをまとめました。"
+topics: ["rails", "ruby", "security"]
+published: true
+price: 0 
+chapters:
+  - introduction
+  - active_storage
+  - marshal
+  - secret_key_base
+  - gadget_chain
+  - yaml
+  - json
+  - xml
+  - const
+  - globalid
+  - attack_chain
+  - prevent
+  - other_deserialize
+  - changelog
+  # - missing
+  # - list
+  
