@@ -1,0 +1,22 @@
+{
+  "name": "public_zenn_articles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ooooooo-q/public_zenn_articles.git"
+  },
+  "author": "ooooooo_q",
+  "dependencies": {
+    "zenn-cli": "^0.1.150"
+  },
+  "devDependencies": {
+    "textlint": "^14.0.2",
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.1"
+  }
+}
