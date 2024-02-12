@@ -28,9 +28,9 @@ Bar.const_get("Ab", false)
 ```
 
 
-定数が存在しない場合は、`const_missing`が呼ばれることもあります。実際に設定されることもすくないですし、デシリアライズでよばれるかは実装によります
+定数が存在しない場合は、`const_missing` が呼ばれることもあります。実際に設定されることもすくないですし、デシリアライズでよばれるかは実装によります。
 
-marshal,yaml,constanisezで呼ばれるかどうか
+<!-- marshal,yaml,constanisezで呼ばれるかどうか -->
 
 
 

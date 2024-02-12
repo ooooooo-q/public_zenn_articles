@@ -22,7 +22,8 @@
       }
     },
     "preset-ja-technical-writing": {
-      "sentence-length": false
+      "sentence-length": false,
+      "no-unmatched-pair": false
     }
   }
 }
