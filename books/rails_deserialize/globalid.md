@@ -39,7 +39,7 @@ p GlobalID::Locator.locate cat_gid.to_s
 ```
 
 URIの構成としては `gid://アプリ名/モデル名/ID` です。
-`GlobalID::Locator.locate(gid)` が実行されると内部的には `モデル名.find(ID)` が呼ばれます。おそらくActiveRecordのモデルを対象としたものです。URI.parseでも扱えますが、open-uriによる `URI.pasre(...).read` などは利用できません。
+`GlobalID::Locator.locate(gid)` が実行されると内部的には `モデル名.find(ID)` が呼ばれます。おそらくActiveRecordのモデルを対象としたものです。URI.parseでも扱えますが、open-uriによる `URI.parse(...).read` などは利用できません。
 
 モデルの取得には `constantize` が使われています。
 

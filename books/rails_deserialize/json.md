@@ -83,7 +83,7 @@ Cookieのシリアライザとして使われているものも `ActiveSupport::
 以前の脆弱性として `JSON.parse` であっても `JSON.load` と同じようにデシリアライズされてしまう問題がありました。[JSON におけるサービス不能攻撃および安全でないオブジェクトの生成について (CVE-2013-0269)](https://www.ruby-lang.org/ja/news/2013/02/22/json-dos-cve-2013-0269/)。
 2020年春に公開された[CVE-2020-10663: JSON における安全でないオブジェクトの生成の脆弱性について（追加の修正）](https://www.ruby-lang.org/ja/news/2020/03/19/json-dos-cve-2020-10663/)では `JSON(user_input)` , `JSON.parse(user_input, nil)` , `JSON(user_input, nil)` , `JSON[user_input, nil]` の場合にデシリアライズがされていました。この形式で使われていることはあまりなさそうですが、rubyのアプリケーションではメタプログラミング経由で使われていない、呼ぶ方法がないことを確認することはなかなか難しいですし、バージョンを上げたほうが無難でしょう。本を書いた時点での最新のバージョンは2.5.1です。
 
-また、Redisを扱うgemの[Kreids](https://github.com/rails/kredis)で、`JSON.load` を利用していたため意図せずデシリアライズが発生していました。[[CVE-2023-27531] Possible Deserialization of Untrusted Data vulnerability in Kredis JSON](https://discuss.rubyonrails.org/t/cve-2023-27531-possible-deserialization-of-untrusted-data-vulnerability-in-kredis-json/82467) (https://hackerone.com/reports/1702859)
+また、Redisを扱うgemの[Kredis](https://github.com/rails/kredis)で、`JSON.load` を利用していたため意図せずデシリアライズが発生していました。[[CVE-2023-27531] Possible Deserialization of Untrusted Data vulnerability in Kredis JSON](https://discuss.rubyonrails.org/t/cve-2023-27531-possible-deserialization-of-untrusted-data-vulnerability-in-kredis-json/82467) (https://hackerone.com/reports/1702859)
 
 
 ### [Oj.load](https://github.com/ohler55/oj)
@@ -145,7 +145,7 @@ load時の指定として `:mode => :strict` が指定されるので危険は�
 
 ### YAMLを使ったJSONのパース
 
-YAMLの仕様はJSONのsubsetとされているため、YAMLのパーサを使ってJSONのパースができます。(https://yaml.org/spec/1.2/spec.html#id2759572) しかし、現在はjsonのgemがあるので使うことはあまりないでしょう。
+YAMLの仕様はJSONのsupersetとされているため、YAMLのパーサを使ってJSONのパースができます。(https://yaml.org/spec/1.2/spec.html#id2759572) しかし、現在はjsonのgemがあるので使うことはあまりないでしょう。
 
 ```ruby:yaml_json.rb
 require 'yaml'
