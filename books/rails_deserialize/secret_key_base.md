@@ -4,7 +4,7 @@ title: "secret_key_base"
 
 ### secret_key_base について
 
-`secret_key_base` はcredentials.ymlなどから設定される値で、Rails内の暗号化や証明のキーの元の値として扱われます。
+`secret_key_base` はcredentials.ymlなどから設定される値で、Rails内の暗号化や署名のキーの元の値として扱われます。
 RAILS_ENVがproductionであればcredentials.ymlに設定された値が、developmentであり設定がなければランダムな値が使用されます。
 
 `secret_key_base` の値は `ActiveSupport::KeyGenerator` で生成するkeyのsecretにのみ使用されています。

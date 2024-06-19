@@ -10,13 +10,13 @@ title: "更新履歴"
 ### 2023/10/31
 
 - "JSON"
-  - Kreidsの事例でhackeroneのURLが間違っていたのを修正
+  - Kredisの事例でhackeroneのURLが間違っていたのを修正
 
 
 ### 2023/8/27
 
 - "JSON"
-  - Kreidsの事例を追加
+  - Kredisの事例を追加
 - "XML"
   - XMLRPCの記述を追加
 
