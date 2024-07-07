@@ -2,6 +2,16 @@
 title: "更新履歴"
 ---
 
+### 2024/6/19
+
+- [typoの修正](https://github.com/ooooooo-q/public_zenn_articles/pull/5)
+  - "攻撃連鎖"
+  - "secret_key_base"
+  - "JSON"
+  - "GlobalID"
+  - "更新履歴"
+
+
 ### 2024/2/12
 
 - リポジトリをGithubの公開リポジトリへ移動
