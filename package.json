@@ -12,7 +12,7 @@
   },
   "author": "ooooooo_q",
   "dependencies": {
-    "zenn-cli": "^0.1.150"
+    "zenn-cli": "^0.1.154"
   },
   "devDependencies": {
     "textlint": "^14.0.2",
