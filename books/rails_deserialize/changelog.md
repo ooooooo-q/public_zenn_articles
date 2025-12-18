@@ -2,6 +2,11 @@
 title: "更新履歴"
 ---
 
+### 2025/12/18
+
+- "JSON"
+  - RailsのセキュリティリリースのURLが変更されていたので反映
+
 ### 2024/6/19
 
 - [typoの修正](https://github.com/ooooooo-q/public_zenn_articles/pull/5)

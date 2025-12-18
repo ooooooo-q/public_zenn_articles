@@ -162,7 +162,7 @@ puts YAML.load(json_str)
 
 #### 過去の事例
 
-Rails 3.0.19のバージョンまではjson形式のリクエストボディのパースに `YAML.load` が使われていました。しかし、前述のYAMLの章で記述したように `YAML.load` にリクエスト内容が入るとRCEが可能となるため大変危険な状態でした。3.0.20のバージョンでOkJsonを使うように修正されています。(CVE-2013-0333: [\[SEC\]\[ANN\] Rails 3.0.20, and 2.3.16 have been released!](https://weblog.rubyonrails.org/2013/1/28/Rails-3-0-20-and-2-3-16-have-been-released/))
+Rails 3.0.19のバージョンまではjson形式のリクエストボディのパースに `YAML.load` が使われていました。しかし、前述のYAMLの章で記述したように `YAML.load` にリクエスト内容が入るとRCEが可能となるため大変危険な状態でした。3.0.20のバージョンでOkJsonを使うように修正されています。(CVE-2013-0333: [\[SEC\]\[ANN\] Rails 3.0.20, and 2.3.16 have been released!](https://rubyonrails.org/2013/1/28/Rails-3-0-20-and-2-3-16-have-been-released))
 
 現在でもcrackのコードでは `YAML.safe_load` を使ってJSONのパースが行われています。(https://github.com/jnunemaker/crack/blob/v0.4.4/lib/crack/json.rb#L14)
 
