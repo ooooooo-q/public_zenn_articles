@@ -5,12 +5,12 @@ zennの記事、本置き場（公開分）
 
 ```
 # 記事追加
-npx zenn new:article
+pnpm zenn new:article
 # 本追加
-npx zenn new:book
+pnpm zenn new:book
 
 # preview
-npx zenn
+pnpm zenn
 ```
 
 ### textlint
@@ -18,6 +18,6 @@ npx zenn
 参考: https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b
 
 ```
-npx textlint articles/*
-npx textlint books/*
+pnpm textlint articles/*
+pnpm textlint books/*
 ```
